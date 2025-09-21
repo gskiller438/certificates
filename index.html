@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certificate Store</title>
+  <style>
+    
+    * { 
+      box-sizing: border-box; 
+      margin: 0; 
+      padding: 0; 
+     
+    }
+
+    body { 
+      font-family: "Poppins", Arial, sans-serif; 
+      background: linear-gradient(135deg, #f9fafb, #e0e7ff); 
+      padding: 30px; 
+      color: #111827; 
+    }
+
+    h1 { 
+      font-size: 28px; 
+      margin-bottom: 24px; 
+      text-align: center; 
+      font-weight: 600;
+      color: #1f2937;
+    }
+
+    .grid { 
+      display: grid; 
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+      gap: 24px; 
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card { 
+      position: relative; 
+      border-radius: 18px; 
+      overflow: hidden; 
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08); 
+      background: #fff; 
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover { 
+      transform: translateY(-8px); 
+      box-shadow: 0 12px 28px rgba(0,0,0,0.15);
+    }
+
+    .card img { 
+      width: 100%; 
+      height: 100px; 
+      object-fit: cover; 
+      display: block; 
+      transition: transform 0.4s ease; 
+    }
+
+    .card:hover img { 
+      transform: scale(1.08); 
+    }
+
+    .card p { 
+      position: absolute; 
+      bottom: 0; 
+      left: 0; 
+      right: 0; 
+      padding: 11px; 
+      font-size: 12px; 
+      font-weight: 700; 
+      color: #ffffff; 
+      background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0)); 
+      text-align: center;
+     
+    }
+
+    a { 
+      text-decoration: none; 
+      color: inherit; 
+      display: block; 
+      height: 100%; 
+    }
+  </style>
+</head>
+<body>
+  <h1>Achievement Certificate Gallery.!!</h1><br><br>
+  <div class="grid">
+    
+    <div class="card">
+      <a href="personal.php">
+        <img src="personal.jpg" alt="Personal Certificate">
+        <p>Personal Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="upload.php">
+        <img src="sports.jpg" alt="Sports Certificate">
+        <p>Sports Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="online.php">
+        <img src="Online Pic.png" alt=" Online Certificate">
+        <p>Online Certificate</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="winning.php">
+        <img src="Winning pic.png" alt="PPT Winning Certificater">
+        <p>PPT Winning Certificate</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="participate.php">
+        <img src="Participate pic.png" alt="PPT Participate Certificater">
+        <p>PPT Participate Certificate</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="intenon.php">
+        <img src="Online Intenship pic.png" alt="Online Internship Certificate">
+        <p>Internship Online Certificate</p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="intenoff.php">
+        <img src="Offline Intenship pic.png" alt="Offline Internship Certificate">
+        <p>Internship Offline Certificate</p>
+      </a>
+    </div>
+    
+    <div class="card">
+      <a href="workshop.php">
+        <img src="Workshop pic.jpeg" alt="Workshop Certificate">
+        <p>Workshop Certificate</p>
+      </a>
+    </div>
+
+    <div class="card">
+     <a href="cultural.php">
+       <img src="Cultural pic.jpeg" alt="Cultural Participate Certificate">
+       <p>Cultural Participate Certificate</p>
+     </a>
+   </div>
+    
+     <div class="card">
+      <a href="courseon.php">
+        <img src="Online Course pic.png" alt="Online Course Certificate">
+        <p>Online Course Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="courseoff.php">
+        <img src="Offline Course pic.png" alt="Offline Course Certificate">
+        <p>Offline Course Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="important.php">
+        <img src="Important pic.png" alt="Important Certificate">
+        <p>Inportant Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="general.php">
+        <img src="General pic.png" alt="General Certificate">
+        <p>General Certificate</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="cert1.php">
+        <img src="Other 1 pic.jpeg" alt="Other Certificate One">
+        <p>Other Certificate One</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="cert2.php">
+        <img src="Other 2 pic.jpeg" alt="Other Certificate Two">
+        <p>Other Certificate Two</p>
+      </a>
+    </div>
+
+     <div class="card">
+      <a href="cert3.php">
+        <img src="Other 3 pic.jpeg" alt="Other Certificate Three">
+        <p>Other Certificate Three</p>
+      </a>
+    </div>
+
+  </div>
+</body>
+</html>

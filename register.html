@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate Store Website</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: url("gynan.png") no-repeat center center fixed;
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .register-box {
+        background-color: rgba(0, 0, 0, 0.5); 
+        padding: 25px;
+        border-radius: 10px;
+        width: 300px;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
+        box-shadow: 0 0 15px rgba(255,255,255,0.2);
+        color: white;
+        padding-bottom: 55px;
+      }
+      .register-box h2 {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .register-box label {
+        display: block;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      .register-box input[type="text"],
+      .register-box input[type="password"],
+      .register-box input[type="email"] {
+        width: 90%;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        font-size: 14px;
+      }
+      .password-container {
+        position: relative;
+      }
+      .password-container input {
+        width: 100%;
+        padding-right: 40px;
+      }
+      .password-container span {
+        position: absolute;
+        right: 15px;
+        top: 35%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 18px;
+        color: gray;
+      }
+      .register-box input[type="submit"] {
+        width: 50%;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        background-color: #2caad0;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto;
+      }
+      .register-box input[type="submit"]:hover {
+        background-color: red;
+      }
+
+      .extra-links a {
+        color: #2caad0;
+        text-decoration: none;
+      }
+
+      .extra-links a:hover {
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+  <div class="register-box">
+      <h2>Register</h2>
+      <form action="register.php" method="post">
+
+          
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter Username" required>
+
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter Email"required>
+
+         
+          <label for="password">Password:</label>
+          <div class="password-container">
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <span id="togglePassword">👁</span>
+          </div>
+
+         
+          <input type="submit" value="Register">
+      </form>
+    <center>
+      <div class="extra-links">
+      <p>Already have an account?<a href="login.html">Login</a></p>
+    </div>
+    </center>
+  </div>  
+
+  <script>
+    const passwordField = document.getElementById("password");
+    const toggleBtn = document.getElementById("togglePassword");
+
+    toggleBtn.addEventListener("click", function () {
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleBtn.textContent = "👁";
+      } else {
+        passwordField.type = "password";
+        toggleBtn.textContent = "👁";
+      }
+    });
+  </script>
+</body>
+</html>
